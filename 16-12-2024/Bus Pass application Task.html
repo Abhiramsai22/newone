@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bus pass</title>
+</head>
+<body>
+    <form action="./response.html">
+    <fieldset>
+        <center>
+            <img src="./TGSRTC logo.jpg" alt="TGSRTC logo" width="200" height="100">
+            <h1>Telangana State Road Transport Corporation</h1>
+            <h1>General Bus Pass Application</h1>
+        </center>
+    </fieldset>
+    <fieldset>
+    <legend><b>Application details</b></legend>
+        <pre>
+<label for="name">Name:</label><input type="text" id="name" pattern="[a-zA-Z]+.{5,10}" placeholder="enter name" required name="name" title="maximum 20 characters">                                                                                                                           <label for="father name">Fathers/Gurdian Name:</label><input type="text" id="father name" pattern="[a-zA-Z]+" placeholder="enter father name" required name="father name" title="enter only text" >
+                </pre>
+                <pre>
+<label for="date">Date of Birth:</label><input type="date" id="date" placeholder="enter DOB" required name="date">                                                                                                                                  <label for="Gender">Gender:</label><input type="radio" name="Gender" value="male" id="male" > <label for="male">Male</label> <input type="radio" name="Gender" id="female" value="female"> <label for="female">Female</label>
+                </pre>
+                <pre>
+<label for="age">Age as on:</label><input type="number" id="age" placeholder="enter age" required name="age">                                                                                                                           <label for="Gender">Aadhaar n.o </label><input type="text" name="Aadhaar" id="number" pattern="[0-9]{12}" placeholder="enter your aadhaar n.o" required name="aadhaar" title="please enter 12 digits" >
+                </pre>
+                <pre>
+<label for="whatsapp">whatsapp:</label><input type="text" id="whatsapp" pattern="\+91[6789][0-9]{9}" placeholder="enter whatsapp n.o" required name="whatsapp" title="enter phone n.o correctly">                                                                                                                           <label for="email">Gmail: </label><input type="text" name="email" id="email" pattern="[a-z0-9_.]+@gmail\.com" placeholder="enter your email" required name="email" title="please enter email properly" >
+                </pre>
+            
+    
+ </fieldset>
+ <fieldset>
+    <legend><b>Residential Address Details</b></legend>
+        <pre>
+<label for="Application">Application Address :</label> <textarea name="Address" id="Address" rows="5" cols="30"></textarea>                                                                                                            <label for="district">District:</label> <select name="District" id="district"> <option value="hyd">Hyderabad</option> <option value="wan">Wanaparthy</option> <option value="mahaboob">mahaboobnagar</option></select>
+        </pre>
+        <pre>
+<label for="mandal">Mandal:</label> <select name="mandal" id="mandal"> <option value="pebbair">pebbair</option> <option value="sri">Srirangapuram</option></select>                                                                                                                                            <label for="village">Village:</label> <select name="village" id="village"> <option value="ram">Ramapur</option> <option value="thir">Thiruvur</option></select>
+</pre>
+<pre>
+<label for="pin">Pincode:</label> <input type="text" id="pin" name="pin" pattern="[0-9]{5}" placeholder="enter district pincode" required name="pincode">
+</pre>
+ </fieldset>
+
+ <fieldset>
+    <legend><b>Passtype details</b></legend>
+        <label for="city">City:</label>
+        <select name="city" id="city"> 
+            <option value="hyd">Hyderabad</option>
+        </select> <br> <br>
+        <label for="city">Pass type:</label>
+        <select name="city" id="city"> 
+            <option value="sel">----select-----</option>
+            <option value="ord">Ordinary pass</option>
+            <option value="express">Metro express pass</option>
+            <option value="deluxe">Metro deluxe pass</option>
+        </select> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Mode of payment & Pass collection</legend>
+            <label for="payment">Payment mode:</label>
+            <select name="payment" id="payment">
+                <option value="sel">---select---</option>
+                <option value="online">Online</option>
+                <option value="Offline">Offline</option>
+            </select> <br> <br>
+            <label for="delivery">Pass delivery mode:</label>
+            <select name="delivery" id="delivery">
+                <option value="sel">---select---</option>
+                <option value="Counter">At Counter</option>
+                <option value="online">online delivery</option>
+            </select> <br> <br>
+            <label for="center">Center at which you want to collect the Pass:</label>
+            <select name="center" id="center">
+                <option value="sel">---select---</option>
+                <option value="kuk">kukatpally</option>
+                <option value="dil">Dilshuknagar</option>
+                <option value="lb">LB nagar</option>
+            </select> <br> <br>
+
+
+    </fieldset>
+    <br>
+        <center>
+            <img src="./captcha image.jpg" alt="captcha" width="100" height="50">
+            <img src="./two arrows.jpg" alt="arrow" width="30" height="30">
+            <br>
+            <input type="text" name="pattern" pattern="gGphJD" placeholder="enter above captcha" required name="captcha" title="enter captcha correctly"> <br> <br>
+            <input type="submit" value="submit">
+        </center>
+    </form>
+</body>
+</html>

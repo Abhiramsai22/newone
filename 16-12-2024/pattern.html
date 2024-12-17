@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="./response.html">
+        
+        <input type="text" name="all" placeholder="all letters except symbols and spaces" required
+            pattern="[a-zA-Z0-9/s]+">
+            <h3>Phone Number Validation</h3>
+            <input type="text" placeholder="Enter Mobile Number" required title="+91 is required" pattern="\+91[6789]\d{9}"
+                name="number">
+            <!-- \+ -> + -->
+            <br>
+            <input type="text" placeholder="any character" required name="any" pattern=".{1,}" title="minlength is 1">
+            <br>
+            <input type="submit" value="Login">
+        
+    </form>
+    
+</body>
+</html>
